@@ -1,0 +1,304 @@
+:root {
+  --white: hsl(0, 0%, 100%);
+  --black: hsl(0, 0%, 0%);
+  --dark-gray: hsl(0, 0%, 55%);
+  --very-dark-gray: hsl(0, 0%, 41%);
+  --left-right-space: 2rem;
+}
+
+/* 
+font-family: 'Alata', sans-serif;
+font-family: 'Josefin Sans', sans-serif;
+*/
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  background-color: var(--black);
+  color: var(--white);
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+/* general styles for the page */
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  font-size: 15px;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  margin: 0;
+}
+
+img {
+  width: 100%;
+}
+
+/* navigation style */
+
+nav ul {
+  display: none;
+}
+
+.intro-bg {
+  background-image: url("./images/mobile/image-hero.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  min-height: 600px;
+  display: flex;
+  flex-flow: column;
+}
+
+nav {
+  padding: 1.5rem var(--left-right-space);
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+}
+
+nav h1 {
+  font-family: "Alata", sans-serif;
+  color: var(--white);
+}
+
+.section-intro {
+  align-self: center;
+  flex-grow: 1;
+  flex-shrink: 1;
+  flex-basis: auto;
+  display: flex;
+  align-items: center;
+}
+
+.section-intro h2 {
+  font-size: 2rem;
+  font-weight: 500;
+  font-family: "Josefin Sans", sans-serif;
+  text-transform: uppercase;
+  border: 2px solid var(--white);
+  color: var(--white);
+  font-weight: 300;
+  padding: 1rem;
+  margin: 0px var(--left-right-space);
+}
+
+/* heading style */
+
+.heading {
+  font-family: "Josefin Sans", sans-serif;
+  text-transform: uppercase;
+  color: var(--black);
+  font-size: 2rem;
+  font-weight: 200;
+  text-align: center;
+  width: 100%;
+  margin-top: 3rem;
+}
+
+/* about section */
+
+.white-bg {
+  background-color: var(--white);
+  padding: 0px var(--left-right-space);
+}
+
+.section-about img {
+  margin-top: 6rem;
+}
+
+.section-about p {
+  font-family: "Josefin Sans", sans-serif;
+  text-align: center;
+  width: 100%;
+  font-weight: 800;
+  color: var(--dark-gray);
+  padding: 0px 1rem;
+  margin-top: 1.5rem;
+  line-height: 1.5;
+}
+
+/* creation section */
+
+.section-creations {
+  margin-top: 5rem;
+  margin-bottom: 6rem;
+}
+
+.products {
+  margin-top: 2rem;
+}
+
+.div-product {
+  background-color: blue;
+  min-height: 10rem;
+  margin-top: 2rem;
+  display: flex;
+  align-items: end;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  box-shadow: 80px 0px 200px var(--black) inset;
+}
+
+.div-product h3 {
+  font-family: "Josefin Sans", sans-serif;
+  text-transform: uppercase;
+  color: var(--white);
+  font-weight: 400;
+  margin-left: 1.5rem;
+  font-size: 2rem;
+}
+
+.div-product div {
+  margin-bottom: 1.5rem;
+}
+
+#deep-earth {
+  background-image: url("./images/mobile/image-deep-earth.jpg");
+}
+
+#night-arcade {
+  background-image: url("./images/mobile/image-night-arcade.jpg");
+}
+
+#soccer-team {
+  background-image: url("./images/mobile/image-soccer-team.jpg");
+}
+
+#the-grid {
+  background-image: url("./images/mobile/image-grid.jpg");
+}
+
+#from-up-above {
+  background-image: url("./images/mobile/image-from-above.jpg");
+}
+
+#pocket-borealis {
+  background-image: url("./images/mobile/image-pocket-borealis.jpg");
+}
+
+#the-curiosity {
+  background-image: url("./images/mobile/image-curiosity.jpg");
+}
+
+#make-it-fisheye {
+  background-image: url("./images/mobile/image-fisheye.jpg");
+}
+
+.button {
+  font-family: "Josefin Sans", sans-serif;
+  text-transform: uppercase;
+  padding: 1rem 3rem;
+  font-weight: bold;
+  background-color: var(--white);
+  border: 1px solid var(--black);
+  letter-spacing: 2px;
+}
+
+.button:hover {
+  color: var(--white);
+  background-color: var(--black);
+  border: 1px solid var(--black);
+}
+
+.button:active {
+  color: var(--white);
+  background-color: var(--very-dark-gray);
+  border: 1px solid var(--very-dark-gray);
+}
+
+.section-creations button {
+  margin: 0 auto;
+  display: block;
+  margin-top: 2rem;
+}
+
+/* footer style */
+
+footer {
+  font-family: "Alata", sans-serif;
+  padding-top: 3rem;
+}
+
+.dark-bg {
+  background-color: var(--black);
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+footer h2 {
+  font-family: "Alata", sans-serif;
+  color: var(--white);
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.footer-nav {
+  padding: 0px;
+}
+
+footer p {
+  color: var(--dark-gray);
+  margin-top: 1rem;
+  margin-bottom: 5rem;
+}
+
+footer a {
+  text-decoration: none;
+  color: var(--white);
+  font-size: 0.9rem;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+footer a:active {
+  color: var(--dark-gray);
+}
+
+footer li {
+  margin: 1rem 0;
+}
+
+.social-links {
+  color: var(--white);
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding: 0;
+  font-size: 2rem;
+  margin-bottom: 0;
+}
+
+.social-links a {
+  text-decoration: none;
+  font-size: inherit;
+}
+
+.social-links li {
+  list-style-type: none;
+  margin: 0 0.5rem;
+}
