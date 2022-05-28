@@ -369,6 +369,9 @@ footer li {
     align-items: center;
   }
 
+  .main-title {
+    font-size: 3rem;
+  }
   /* about section */
 
   .section-about {
