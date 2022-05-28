@@ -224,10 +224,15 @@ nav h1 {
   border: 1px solid var(--very-dark-gray);
 }
 
-.center button {
+.center {
   margin: 0 auto;
   display: block;
   margin-top: 2rem;
+  text-align: center;
+}
+
+#see-all-desktop-button {
+  display: none;
 }
 
 /* footer style */
@@ -272,7 +277,8 @@ footer a {
 }
 
 footer a:hover {
-  text-decoration: underline;
+  border-bottom: 2px solid var(--white);
+  padding-bottom: 0.5rem;
 }
 
 footer a:active {
@@ -316,8 +322,10 @@ footer li {
     background-image: url("./images/desktop/image-hero.jpg");
   }
 
-  nav ul {
-    display: inline-block;
+  nav ul li:hover {
+    /* border-bottom: 2px solid var(--white);
+    padding-bottom: 0.5rem; */
+    text-decoration: underline;
   }
 
   .company-name {
@@ -400,8 +408,8 @@ footer li {
 
   .wrap {
     width: 100%;
-    display: flex;
-    flex-wrap: nowrap;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
     gap: 2rem;
   }
 
@@ -410,6 +418,7 @@ footer li {
     margin-top: 2rem;
     flex-grow: 1;
     background-position: left top;
+    box-shadow: 0px -50px 100px var(--black) inset;
   }
 
   #deep-earth {
@@ -442,5 +451,34 @@ footer li {
 
   #make-it-fisheye {
     background-image: url("./images/desktop/image-fisheye.jpg");
+  }
+
+  #see-all-desktop-button {
+    display: inline-block;
+  }
+
+  #see-all-mobile-button {
+    display: none;
+  }
+
+  /* footer section */
+
+  footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-left: var(--left-right-space);
+    padding-right: var(--left-right-space);
+  }
+
+  .footer-nav {
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    gap: 1.5rem;
+  }
+
+  .social-links {
+    justify-content: end;
   }
 }
