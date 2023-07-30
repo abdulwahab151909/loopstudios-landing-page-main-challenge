@@ -27,10 +27,6 @@ Users should be able to:
 ![Mobile view of the webpage](./screenshots/mobile-view.png)
 ![Navigation menu on mobile](./screenshots/mobile-menu.png)
 
-### Links
-
-- Solution URL: [Solution URL](https://github.com/abdulwahab151909/loopstudios-landing-page-main-challenge)
-
 ## My process
 
 ### Built with
@@ -44,5 +40,4 @@ Users should be able to:
 
 ## Author
 
-- LinkedIn - [Abdul Wahab](https://www.linkedin.com/in/abdulwahabapk/)
-- Twitter - [@AbdulWahab_Dev](https://www.twitter.com/AbdulWahab_Dev)
+-   Abdul Wahab - [@abdulwahabse](https://github.com/abdulwahabse)
